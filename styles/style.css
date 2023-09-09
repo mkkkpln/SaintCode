@@ -9,6 +9,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   padding-top: 64px;
   padding-bottom: 40px;
@@ -131,6 +135,37 @@ label {
   justify-content: space-between;
   gap: 20px;
 }
+
+.img-wrapper {
+  position: relative;
+}
+
+.person-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  border: 0;
+  /* наложение кнопки на картинку */
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  transition: 0.3s;
+}
+
+/* псевдокласс */
+.person-button:hover svg {
+  transform: scale(1.2);
+}
+
+
 
 /* адаптив */
 @media (max-width: 598px) {
