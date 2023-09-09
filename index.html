@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <!-- Title -->
+        <h1 class="title">Harry Potter</h1>
+        <p class="subtitle">
+          View all <span style="color: blueviolet">characters</span> from the
+          Harry Potter universe
+        </p>
+
+        <div class="wrapper">
+          <!-- Input text -->
+          <div class="inner inner-input">
+            <label for="search">Name</label>
+            <input
+              placeholder="Hermione"
+              class="input"
+              id="search"
+              type="text"
+            />
+            <!-- связали с помощью for-id ярлык с полем ввода-->
+          </div>
+
+          <!-- Select -->
+          <div class="inner">
+            <label for="select">School</label>
+            <select class="select" id="select">
+              <option value="">Choose one</option>
+              <option value="Griffindor">Griffindor</option>
+              <option value="Slytherin">Slytherin</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="characters">
+        <div class="container grid">
+
+          <article class="card">
+            <img
+              class="person-image"
+              src="./images/person001.webp"
+              srcset="./images/person001.webp 1x, ./images/person001@2x.webp 2x"
+              alt="Hermione (Person foto)"
+            />
+            <div class="person-info">
+              <strong class="person-name" >Hermione Granger</strong>
+              <p class="person-text">Actor: Emma Watson</p>
+              <p class="person-text">Gender: female</p>
+              <p class="person-text">House: Gryffindor</p>
+              <p class="person-text">Wand core: dragon heartstring </p>
+              <p class="person-text">Alive: yes</p>
+            </div>
+          </article>
+
+
+          <article class="card">
+            <img
+              class="person-image"
+              src="./images/person002.webp"
+              srcset="./images/person002.webp 1x, ./images/person002@2x.webp 2x"
+              alt="Draco (Person foto)"
+            />
+            <div class="person-info">
+              <strong class="person-name" >Draco Malfoy</strong>
+              <p class="person-text"> Actor: Tom Felton</p>
+              <p class="person-text">Gender: male</p>
+              <p class="person-text">House: Slytherin</p>
+              <p class="person-text">Wand core: unicorn tail-hair</p>
+              <p class="person-text">Alive: yes</p>
+            </div>
+          </article>
+
+
+
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
